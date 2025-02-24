@@ -1,1 +1,22 @@
+========================
+ESP32-CAM Board Overview:
+=========================
 
+    Microcontroller: ESP32-D0WD (dual-core 32-bit LX6 microprocessor)
+    Camera Module: OV2640 (2MP) with support for OV7670 (without the built-in flash)
+    Operating Voltage: 5V (regulated to 3.3V on board)
+    Wi-Fi: 802.11 b/g/n
+    Bluetooth: BLE and Bluetooth Classic
+    Flash Memory: 4MB (or 8MB in some variants)
+    MicroSD Slot: Supports up to 4GB
+    UART, SPI, I2C, PWM, ADC, DAC support
+
+💡 Built-in LEDs
+
+    White LED (Flash LED):
+        Controlled by GPIO 4
+        Used as a flashlight or illumination source for the camera.
+
+    Red LED (Status LED):
+        Controlled by GPIO 33
+        Turns on during power-up or can be programmed as an indicator.
