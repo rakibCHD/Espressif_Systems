@@ -1,0 +1,81 @@
+The ESP32-CAM is a compact development board with Wi-Fi, Bluetooth, and a built-in camera (OV2640).
+This is the guidence to setting it up, uploading code, and accessing the camera stream.
+🧰 Required Components
+
+    ESP32-CAM module (AI Thinker)
+    USB-to-Serial Adapter (FTDI232, CH340, CP2102) (for programming)
+    Jumper wires (female-to-female)
+    Breadboard (optional, for stable connections)
+    5V power source (via USB or external supply)
+
+========================
+ 1. Wiring Connections
+========================
+
+The ESP32-CAM doesn’t have a built-in USB port for programming. Use an FTDI USB-to-Serial adapter:
+FTDI Module	ESP32-CAM
+3.3V/5V*	5V (ESP32-CAM)
+GND	GND
+TX	U0R (RX on ESP32-CAM)
+RX	U0T (TX on ESP32-CAM)
+
+🔔 Important:
+✅ Power with 5V (not 3.3V) for stable camera operation.
+✅ Connect IO0 to GND while uploading code. (Remove after upload for normal boot)
+
+======================
+2. Arduino IDE Setup
+======================
+🛠️ Install ESP32 Board Support:
+
+    Open Arduino IDE → File > Preferences
+    In Additional Board URLs, add:
+
+    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+    Go to Tools > Board > Boards Manager, search ESP32, and click Install.
+
+==============================
+3. Select Board & Settings
+==============================
+
+In Arduino IDE, configure the following under Tools:
+Setting	Value
+Board	AI Thinker ESP32-CAM
+CPU Frequency	240MHz (WiFi/BT)
+Flash Frequency	80MHz
+Flash Mode	QIO
+Partition Scheme	Huge APP (3MB No OTA/1MB SPIFFS)
+Upload Speed	115200
+Port	Select the correct COM port
+Programmer	esptool
+
+===================
+4. Uploading Code
+===================
+🚀 Example Code: Use the built-in CameraWebServer example:
+
+    Go to File > Examples > ESP32 > Camera > CameraWebServer.
+    In the code:
+        Select the camera model:
+
+#define CAMERA_MODEL_AI_THINKER
+
+Enter your Wi-Fi credentials:
+
+        const char* ssid = "YOUR_SSID";
+        const char* password = "YOUR_PASSWORD";
+
+    Connect IO0 → GND before uploading.
+    Click Upload and wait for completion.
+
+==============================
+ 5. Access the Camera Stream
+==============================
+    After uploading, disconnect IO0 from GND.
+    Open Serial Monitor (115200 baud) and press the ESP32-CAM RESET button.
+    Look for this output:
+
+if WiFi connected it shows:
+Camera Ready! Use 'http://xxx.xxx.xxx.xxx' to connect.
+Go to any browser and type 'http://xxx.xxx.xxx.xxx' to access camera.
