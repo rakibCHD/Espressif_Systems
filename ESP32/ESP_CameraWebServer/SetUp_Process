@@ -77,6 +77,6 @@ Enter your Wi-Fi credentials:
     Open Serial Monitor (115200 baud) and press the ESP32-CAM RESET button.
     Look for this output:
 
-if WiFi connected it shows:
+if WiFi connected properly, it shows:
 Camera Ready! Use 'http://xxx.xxx.xxx.xxx' to connect.
 Go to any browser and type 'http://xxx.xxx.xxx.xxx' to access camera.
