@@ -1,0 +1,20 @@
+// Control White Flash LED (GPIO 4)
+#define FLASH_LED 4
+
+// Control Red Status LED (GPIO 33)
+#define STATUS_LED 33
+
+void setup() {
+  pinMode(FLASH_LED, OUTPUT);
+  pinMode(STATUS_LED, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(FLASH_LED, HIGH);   // Turn on flash
+  digitalWrite(STATUS_LED, HIGH);  // Turn on red LED
+  delay(1000);                     // Wait 1 second
+
+  digitalWrite(FLASH_LED, LOW);    // Turn off flash
+  digitalWrite(STATUS_LED, LOW);   // Turn off red LED
+  delay(1000);                     // Wait 1 second
+}
