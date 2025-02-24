@@ -54,6 +54,7 @@ Programmer	esptool
 4. Uploading Code
 ===================
 🚀 Example Code: Use the built-in CameraWebServer example:
+or browse the ESP_CameraWebServer.ino(with header) files from github.
 
     Go to File > Examples > ESP32 > Camera > CameraWebServer.
     In the code:
