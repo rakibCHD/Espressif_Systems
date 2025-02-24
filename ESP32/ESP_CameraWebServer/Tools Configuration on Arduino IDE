@@ -1,0 +1,11 @@
+Board: "AI Thinker ESP32-CAM"
+CPU Frequency: "240MHz (WiFi/BT)"
+Flash Frequency: "80MHz"
+Flash Mode: "QIO"
+Partition Scheme: "Huge APP (3MB No OTA/1MB SPIFFS)"
+Core Debug Level: "None"
+Erase All Flash Before Sketch Upload: "Disabled"
+Port: "COM*"
+Get Board Info
+
+Programmer: "Esptool"
