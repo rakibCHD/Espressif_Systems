@@ -1,1 +1,18 @@
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+###***To communicate with ESP32,firstly install the necessary USB-->UART Driver for operating System***### 
+-----*After successful installation,the ESP32 will show as a Communication Port under Device Manager*-----
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+### If you want to programming your ESP32 using Python scripts;
 
+--->Use any IDE(Integrated Development Environment) like:
+1. Thonny
+2. Visual Studio Code (VS Code) with PlatformIO
+3. PyCharm
+4. uPyCraft IDE
+5. MikroPython IDE (MikroPython Tool)
+6. Eclipse with PyDev
+--->Burn the necessary firmware for ESP32 dev Board to run Python scripts Using IDE.
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
