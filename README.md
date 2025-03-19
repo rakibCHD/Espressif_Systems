@@ -2,7 +2,7 @@
 # Some types of sample ESP Boards with working functionality.
 # Supported Boards & Specifications:
 
-# 1. ESP32 (Dual-core, WiFi + Bluetooth)
+# --> ESP32 (Dual-core, WiFi + Bluetooth)
 
 The ESP32 is a powerful microcontroller developed by Espressif Systems, featuring integrated WiFi and Bluetooth capabilities. 
 It is widely used in IoT applications due to its high processing power, low energy consumption, and extensive peripheral support.
@@ -20,7 +20,7 @@ Key Features:
     UART, SPI, I2C, I2S, CAN Bus: Supported
     Deep Sleep Mode: Power consumption as low as 10 µA.
     
-# 2. ESP8266 (Single-core, WiFi)
+# --> ESP8266 (Single-core, WiFi)
 
 The ESP8266 is an affordable WiFi-enabled microcontroller designed for IoT and wireless communication projects. 
 While not as powerful as the ESP32, it is popular due to its low cost and simplicity.
@@ -37,7 +37,7 @@ Key Features:
     UART, SPI, I2C: Supported
     Deep Sleep Mode: Power consumption as low as 10 µA.
 
-# 3. WeMos D1 R1 (ESP8266-based Development Board)
+# --> WeMos D1 R1 (ESP8266-based Development Board)
 
 The WeMos D1 R1 is an Arduino Uno-shaped board based on the ESP8266. It is easier to use compared to standalone ESP8266 modules since it comes with a USB-to-Serial converter, voltage regulators, and more accessible GPIO pins.
 Key Features:
